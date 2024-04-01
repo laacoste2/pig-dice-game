@@ -11,11 +11,12 @@ namespace PigDiceGame
         private string _name;
         private int _overallScore;
         private int _turnScore;
-        public bool win;
+        private bool _win = false;
 
         public string Name { get => _name; set => _name = value; }
         public int OverallScore { get => _overallScore; set => _overallScore = value; }
         public int TurnScore { get => _turnScore; set => _turnScore = value; }
+        public bool Win { get => _win; set => _win = value; }
 
         public Player(string name)
         {
